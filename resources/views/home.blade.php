@@ -58,10 +58,22 @@
                             <span>{{$route -> orario_di_arrivo}}</span>
                         </div>
                         <div class="col">
-                            <span>{{$route -> in_orario}}</span>
+                            <span>
+                                @if($route -> in_orario < 1)
+                                    <span>NO</span>
+                                @elseif($route -> in_orario > 0){
+                                    <span>SI</span>
+                                }@endif
+                            </span>
                         </div>
                         <div class="col">
-                            <span>{{$route -> cancellato}}</span>
+                            <span>
+                                @if($route -> cancellato < 1)
+                                    <span>CONFERMATO</span>
+                                @elseif($route -> cancellato > 0){
+                                    <span>CANCELLATO! Ci scusiamo per il disagio.</span>
+                                }@endif
+                            </span>
                         </div>
                         <div class="col">
                             <span>{{$route -> numero_carrozze}}</span>
