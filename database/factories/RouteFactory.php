@@ -18,8 +18,8 @@ class RouteFactory extends Factory
     {
         return [
             'azienda' => fake()->company(),
-            'stazione_di_partenza' => fake()->country(),
-            'stazione_di_arrivo' => fake()->country(),
+            'stazione_di_partenza' => fake()->city(),
+            'stazione_di_arrivo' => fake()->city(),
             'orario_di_partenza' => fake()->time('H:i:s'),
             'orario_di_arrivo' => fake()->time('H:i:s'),
             'codice_treno' => fake()->bothify('??-#####'),
