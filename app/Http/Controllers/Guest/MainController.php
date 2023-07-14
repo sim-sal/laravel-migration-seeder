@@ -11,7 +11,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        $routes = Route::all();
+        $routes = Route::orderBy('orario_di_partenza')->get();
 
         return view('home', compact('routes'));
     }

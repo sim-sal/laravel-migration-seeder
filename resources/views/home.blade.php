@@ -60,7 +60,7 @@
                         <div class="col">
                             <span>
                                 @if($route -> in_orario < 1)
-                                    <span>IN RITARDO</span>
+                                    <span>...IN RITARDO</span>
                                 @else
                                     <span>SI</span>
                                 @endif
@@ -69,9 +69,9 @@
                         <div class="col">
                             <span>
                                 @if($route -> cancellato < 1)
-                                    <span>CONFERMATO</span>
+                                    <span>NO</span>
                                 @else
-                                    <span>CANCELLATO! Ci scusiamo per il disagio.</span>
+                                    <span>CANCELLATO!<br>Ci scusiamo per il disagio.</span>
                                 @endif
                             </span>
                         </div>
