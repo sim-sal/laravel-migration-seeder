@@ -23,7 +23,7 @@ class RouteFactory extends Factory
             'orario_di_partenza' => fake()->time('H:i:s'),
             'orario_di_arrivo' => fake()->time('H:i:s'),
             'codice_treno' => fake()->unique()->bothify('??-#####'),
-            'numero_carrozze' => fake()->randomNumber(2, false),
+            'numero_carrozze' => fake()->numberBetween(1, 20),
             'in_orario' => fake()->boolean(),
             'cancellato' => fake()->boolean()
         ];
