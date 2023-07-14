@@ -8,7 +8,7 @@
     <main>
         <div id="main-content">
             <div class="container">
-                <h1 class="text-center">RILWAY ROUTES</h1>
+                <h1 class="text-center">RAILWAY ROUTES</h1>
 
                 <div class="row column_title">
                     <div class="col">
